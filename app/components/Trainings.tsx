@@ -27,35 +27,42 @@ export default function Trainings() {
     "Ongoing Support and Resources",
   ];
 
+  const wrapperStyle =
+    "flex items-center justify-between h-full";
+  // const headingStyle = "headings"
+  const paragraph = "text-subdue text-lg";
+  const listStyle = "flex gap-3.5 text-lg text-subdue";
+
   return (
-    <section>
-      <main>
+    <section className="bg-white">
+      <main className="section flex flex-col gap-24 py-16">
         {/* division for corporate training */}
-        <div>
+        <div className={` flex-row-reverse ${wrapperStyle}`}>
           <Image
             src="/corporate-training.png"
             alt="Corporate Training"
-            width={100}
-            height={100}
+            width={500}
+            height={500}
+            className="h-full"
           />
 
-          <div>
-            <h2>Corporate Training</h2>
-            <p>
+          <div className="w-[646px] flex flex-col gap-5">
+            <h2 className="headings">Corporate Training</h2>
+            <p className="text-subdue text-lg">
               Empower your team with our customised Corporate Training programs
               designed to address the unique needs and objectives of your
               organisation. Our expert facilitators work closely with your team
               to deliver tailored learning experiences that align with your
               company&apos;s goals and values.
             </p>
-            <ul>
+            <ul className="px-7.5">
               {corporateTraining.map((training) => (
-                <li key={training}>
+                <li key={training} className={listStyle}>
                   <Image
                     src={"/blazing.svg"}
                     alt="list-icon"
-                    width={24}
-                    height={24}
+                    width={12}
+                    height={16}
                   />
                   <p>{training}</p>
                 </li>
@@ -65,31 +72,32 @@ export default function Trainings() {
         </div>
 
         {/* division for personal training */}
-        <div>
+        <div className={wrapperStyle}>
           <Image
             src="/individual-training.png"
             alt="Individual Training"
-            width={100}
-            height={100}
+            width={500}
+            height={500}
+            className="h-full"
           />
 
-          <div>
-            <h2>Personalised Individual Training</h2>
-            <p>
+          <div className="w-[629px]">
+            <h2 className="headings">Personalised Individual Training</h2>
+            <p className={paragraph}>
               Begin a journey of lifelong learning and professional development
               with Tobams Group&apos;s diverse range of training programs for
               individuals. From technical skills mastery to soft skills
               enhancement, our courses cover a wide spectrum of topics to meet
               the evolving needs of today&apos;s professionals.
             </p>
-            <ul>
+            <ul className="px-7.5">
               {individualTraining.map((training) => (
-                <li key={training}>
+                <li key={training} className={listStyle}>
                   <Image
                     src={"/blazing.svg"}
                     alt="list-icon"
-                    width={24}
-                    height={24}
+                    width={12}
+                    height={16}
                   />
                   <p>{training}</p>
                 </li>
@@ -99,31 +107,32 @@ export default function Trainings() {
         </div>
 
         {/* division for capacity development */}
-        <div>
+        <div className={` flex-row-reverse ${wrapperStyle}`}>
           <Image
             src="/capacity-development.png"
             alt="Capacity Development"
-            width={100}
-            height={100}
+            width={500}
+            height={500}
+            className="h-full"
           />
 
-          <div>
-            <h2>Capacity Development</h2>
-            <p>
+          <div className="w-[644px]">
+            <h2 className="headings">Capacity Development</h2>
+            <p className={paragraph}>
               At Tobams Group, we empower individuals and organizations through
               tailored training programs, expert-led workshops, and personalized
               mentorship. We are committed to your success and growth. We are
               dedicated to providing a comprehensive suite of benefits designed
               to foster your development and success:
             </p>
-            <ul>
+            <ul className="px-7.5">
               {capacityDevelopment.map((training) => (
-                <li key={training}>
+                <li key={training} className={listStyle}>
                   <Image
                     src={"/blazing.svg"}
                     alt="list-icon"
-                    width={24}
-                    height={24}
+                    width={12}
+                    height={16}
                   />
                   <p>{training}</p>
                 </li>

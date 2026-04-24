@@ -3,8 +3,9 @@ import Navbar from "./components/Navbar";
 import LearningSystem from "./components/LearningSystem";
 import Trainings from "./components/Trainings";
 import ManagementDevProgram from "./components/ManagementDevProgram";
-import CeoLetter from "./components/CeoLetter";
 import Footer from "./components/Footer";
+import CeoLearning from "./components/CeoLearning";
+import Consultation from "./components/Consultation";
 
 export default function Home() {
   return (
@@ -14,7 +15,8 @@ export default function Home() {
       <LearningSystem />
       <Trainings />
       <ManagementDevProgram />
-      <CeoLetter />
+      <CeoLearning />
+      <Consultation />
 
       <Footer />
     </div>

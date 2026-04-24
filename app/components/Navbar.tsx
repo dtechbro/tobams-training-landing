@@ -5,8 +5,8 @@ import Button from "./Button";
 export default function Navbar() {
   const navLinks = [
     { name: "About", href: "/", dropdown: true },
-    { name: "What we do", href: "#" },
-    { name: "Jobs", href: "#" },
+    { name: "What we do", href: "#", dropdown: true },
+    { name: "Jobs", href: "#", dropdown: true },
     { name: "Projects", href: "#" },
     { name: "TG Academy", href: "#" },
     { name: "Strategic Partnership", href: "#" },
@@ -26,11 +26,11 @@ export default function Navbar() {
               <p>Account</p>
             </Button>
 
-            <Button>Take Assessment</Button>
+            <Button className="bg-secondary">Take Assessment</Button>
           </div>
         </div>
 
-        <hr className="border-gray-500"/>
+        <hr className="border-gray-500" />
 
         <nav className="max-w-[1312px] mx-auto px-4 flex items-center justify-center gap-3 p-3">
           {navLinks.map((link) => (
