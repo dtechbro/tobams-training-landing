@@ -104,7 +104,7 @@ export default function Footer() {
             </nav>
           </div>
 
-          <div className="flex bg-[#FFFFFF0F] p-6 rounded-lg gap-6">
+          <div className="flex bg-[#FFFFFF0F] p-6 rounded-lg gap-6 h-fit">
             <div>
               <h3 className="text-[20px] font-bold">Registered Offices</h3>
 
@@ -124,9 +124,9 @@ export default function Footer() {
                 <Image
                   src={"/line.svg"}
                   alt="line-icon"
-                  width={2}
-                  height={10}
-                  className="h-fit"
+                  width={1}
+                  height={76}
+                  className="h-full"
                 />
 
                 <div>
@@ -143,9 +143,9 @@ export default function Footer() {
             <Image
               src={"/line.svg"}
               alt="line-icon"
-              width={2}
-              height={10}
-              className="h-fit"
+              width={1}
+              height={133}
+              className="h-full"
             />
 
             <div>

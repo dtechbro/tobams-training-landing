@@ -17,22 +17,40 @@ export default function Navbar() {
   return (
     <section>
       <main>
-        <div className="max-w-[1312px] mx-auto px-4 flex justify-between items-center">
-          <Image src={"/logo.svg"} alt="Logo" width={100} height={100} />
+        <div className="max-w-[1312px] mx-auto px-4 flex justify-between items-center py-6">
+          <Image src={"/logo.svg"} alt="Logo" width={165} height={64} />
 
-          <div className="flex gap-4">
+          <div className="hidden lg:flex gap-4">
             <Button>
               <Image src={"/user.svg"} alt="User" width={24} height={24} />
-              <p>Account</p>
+              
+              <span className="flex gap-1">
+                <p>Account</p>
+                <Image
+                  src={"/arrow-down.svg"}
+                  alt="Arrow Down"
+                  width={16}
+                  height={16}
+                  color="white"
+                />
+              </span>
             </Button>
 
             <Button className="bg-secondary">Take Assessment</Button>
           </div>
+
+          <Image
+            src={"menu.svg"}
+            alt="menu-icon"
+            width={32}
+            height={32}
+            className="lg:hidden"
+          />
         </div>
 
-        <hr className="border-gray-500" />
+        <hr className="border border-black/10 hidden lg:block" />
 
-        <nav className="max-w-[1312px] mx-auto px-4 flex items-center justify-center gap-3 p-3">
+        <nav className="max-w-[1312px] mx-auto px-4 hidden lg:flex items-center justify-center gap-8 py-5 ">
           {navLinks.map((link) => (
             <Link
               key={link.name}
