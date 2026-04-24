@@ -31,7 +31,7 @@ export default function Consultation() {
           <div className="flex flex-col gap-5">
             <div className="flex flex-col gap-3">
               <h2 className="headings text-primary">Training The Consultant</h2>
-              <p className="text-lg font-semibold text-primary">
+              <p className="text-[16px] lg:text-lg font-semibold text-primary">
                 Maximise Your Potential as a Certified Trainer:
               </p>
             </div>
@@ -47,11 +47,11 @@ export default function Consultation() {
               their career advancement.
             </p>
 
-            <div className="grid grid-cols-2 bg-primary text-white p-6 gap-5 rounded-lg">
+            <div className="grid grid-cols-1 lg:grid-cols-2 bg-primary text-white p-6 gap-5 rounded-lg">
               {trainingPros.map((item) => (
                 <div key={item.title} className="flex flex-col gap-3">
-                  <h3 className="font-bold">{item.title}</h3>
-                  <p>{item.details}</p>
+                  <h3 className="text-[16px] lg:text-lg font-bold">{item.title}</h3>
+                  <p className="">{item.details}</p>
                 </div>
               ))}
             </div>
@@ -69,14 +69,16 @@ export default function Consultation() {
         </main>
       </section>
 
-      <section className="flex items-center justify-center">
-        <main className="bg-primary w-[1134px] rounded-lg py-8 flex flex-col items-center justify-center text-white text-center gap-8">
+      <section className="flex items-center justify-center px-6 lg:px-0">
+        <main className="bg-primary w-[1134px] rounded-lg py-8 px-6 flex flex-col items-center justify-center text-white text-center gap-8">
           <p>
             Want to accelerate professional growth and development at your
             organisation? <br /> See how we can help.
           </p>
 
-          <Button className="text-primary bg-white">Book a Consultation</Button>
+          <button className="text-primary bg-white flex items-center gap-3 py-3 px-6 rounded-sm">
+            Book a Consultation
+          </button>
         </main>
       </section>
     </>

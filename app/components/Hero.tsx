@@ -15,16 +15,16 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-black/70"></div>
       </div>
 
-      <main className="absolute inset-0 flex items-center justify-center text-center text-white">
+      <main className="absolute inset-0 flex items-center justify-center text-center text-white px-3">
         <div className="flex flex-col items-center gap-10">
           <div className="flex flex-col items-center gap-3">
-            <p className="py-3 px-12 bg-white/10 rounded-[100px]">WHAT WE DO</p>
+            <p className="py-2.5 lg:py-3 px-8 lg:px-12 bg-white/10 text-xs lg:text-sm rounded-[100px]">WHAT WE DO</p>
 
             <div className="flex flex-col items-center gap-4">
-              <h1 className="font-bold text-[56px]">
+              <h1 className="font-bold text-2xl lg:text-[56px]">
                 Training and Development
               </h1>
-              <p className="font-semibold text-lg w-[1077px]">
+              <p className="font-semibold text-sm lg:text-lg lg:w-[1077px]">
                 Our comprehensive range of programs and resources is designed to
                 enhance skills, broaden knowledge, and propel careers forward in
                 today&apos;s ever-evolving landscape.{" "}

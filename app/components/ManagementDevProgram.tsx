@@ -9,8 +9,10 @@ export default function ManagementDevProgram() {
   ];
 
   return (
-    <section className="py-16">
-      <main className="section flex items-center bg-primary p-10 rounded-[20px] text-white gap-12">
+    <section className="py-16 px-6">
+      <main className="section flex flex-col lg:flex-row items-center bg-primary p-4 lg:p-10 rounded-[20px] text-white gap-5 lg:gap-12">
+        <h2 className="headings lg:hidden text-[16px]">Management Development Program</h2>
+
         <Image
           src="/mgt-dev-program.png"
           alt="image-for-mgt-training"
@@ -19,10 +21,12 @@ export default function ManagementDevProgram() {
           className="w-[592px]"
         />
 
-        <div className="flex flex-col gap-4 w-[592px]">
-          <h2 className="headings">Management Development Program</h2>
+        <div className="flex flex-col gap-4 lg:w-[592px]">
+          <h2 className="headings hidden lg:block">
+            Management Development Program
+          </h2>
 
-          <p className="text-lg">
+          <p className="">
             Tobams Group offers a comprehensive Management Development Program
             designed to equip corporate organisations with the high -performing
             leaders they need to thrive. <br /> <br /> Our program includes
@@ -32,7 +36,7 @@ export default function ManagementDevProgram() {
             competencies for corporate organisations.
           </p>
 
-          <ul className="py-2 px-4 flex flex-col gap-6">
+          <ul className="py-2 lg:px-4 flex flex-col gap-6">
             {programBenefits.map((benefit, index) => (
               <li
                 key={index}
@@ -45,7 +49,7 @@ export default function ManagementDevProgram() {
                   height={16}
                   className="text-white"
                 />
-                <p className="text-lg font-semibold">{benefit}</p>
+                <p className="font-normal lg:font-semibold">{benefit}</p>
               </li>
             ))}
           </ul>

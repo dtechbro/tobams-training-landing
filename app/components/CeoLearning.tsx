@@ -13,18 +13,18 @@ export default function CeoLearning() {
 
   return (
     <section className="bg-white py-16">
-      <main className="section flex flex-col gap-6 bg-[#EF435333] p-10 rounded-2xl">
-        <div className="flex flex-col gap-3 ">
-          <h6 className="text-[#1671D9] italic font-semibold text-[20px]">
+      <main className="section flex flex-col gap-5 lg:gap-6 bg-[#EF435333] p-10 rounded-2xl">
+        <div className="flex flex-col gap-2 lg:gap-3 ">
+          <h6 className="text-[#1671D9] italic font-semibold text-sm lg:text-[20px]">
             Learning With Our CEO:
           </h6>
 
-          <h2 className="text-primary font-semibold text-[32px] italic">
+          <h2 className="text-primary font-semibold text-[20px] lg:text-[32px] italic">
             Transformation Hub With Jite Newton
           </h2>
         </div>
 
-        <p className="text-lg">
+        <p className="">
           Transformation Hub with Jite Newton is a flagship webinar series
           curated by the CEO, Dr. Jite Newton. Designed to elevate career
           trajectories and leadership capabilities, this exclusive event offers
@@ -35,7 +35,7 @@ export default function CeoLearning() {
           drive success in your endeavours.
         </p>
 
-        <div className="flex items-center gap-8">
+        <div className="flex flex-col lg:flex-row items-center gap-8">
           <Image
             src="/ceo-learning.png"
             alt="CEO Letter"
@@ -44,12 +44,12 @@ export default function CeoLearning() {
             className="h-full"
           />
 
-          <div className="bg-[#FFFFFF4D] rounded-lg py-8 px-5 flex flex-col gap-6">
-            <div className="grid grid-cols-2 gap-x-6 gap-y-3">
+          <div className="bg-[#FFFFFF4D] rounded-lg py-8 px-5 flex flex-col gap-6 w-full">
+            <div className="grid grid-cols-1 w-full lg:grid-cols-2 gap-x-6 gap-y-3">
               {perks.map((perk) => (
                 <span
                   key={perk}
-                  className="flex items-center gap-2.5 bg-white p-4 rounded-xl"
+                  className="flex items-center gap-2.5 bg-white p-4 rounded-xl w-full"
                 >
                   <Image
                     src="/learning-bolt.svg"

@@ -12,18 +12,20 @@ export default function LearningSystem() {
   ];
   return (
     <section className="bg-[#5712441A] my-4">
-      <main className="section flex items-center gap-20 py-12">
+      <main className="section flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-20 py-12">
+        <h2 className="lg:hidden headings text-primary">
+          Learning Management System
+        </h2>{" "}
         <Image
           src="/learning-system.png"
           alt="Learning System"
           width={100}
           height={100}
-          className="h-[568px] w-auto"
+          className="h-auto w-full lg:w-auto lg:h-[568px]"
         />
-
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-6 lg:gap-8">
           <div className="flex flex-col gap-5">
-            <h2 className="headings text-primary">
+            <h2 className="hidden lg:block headings text-primary">
               Learning Management System
             </h2>
 

@@ -41,9 +41,9 @@ body {
 };
 
 .section {
-  @apply max-w-[1312px] mx-auto px-4;
+  @apply max-w-[1312px] mx-auto px-6 lg:px-0;
 };
 
 .headings {
-  @apply font-semibold text-[40px] tracking-[3%] leading-[150%];
+  @apply font-semibold text-[20px] lg:text-[40px] tracking-[3%] leading-[150%];
 };
