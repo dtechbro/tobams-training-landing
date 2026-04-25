@@ -6,6 +6,7 @@ import ManagementDevProgram from "./components/ManagementDevProgram";
 import Footer from "./components/Footer";
 import CeoLearning from "./components/CeoLearning";
 import Consultation from "./components/Consultation";
+import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       <ManagementDevProgram />
       <CeoLearning />
       <Consultation />
-
+      <Testimonials />
       <Footer />
     </div>
   );

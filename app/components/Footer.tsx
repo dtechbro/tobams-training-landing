@@ -157,7 +157,7 @@ export default function Footer() {
                   alt="s-line-icon"
                   width={1}
                   height={76}
-                  className="h-[76px]] w-auto hidden lg:block"
+                  className="h-[76px] w-auto hidden lg:block"
                 />
 
                 <div>

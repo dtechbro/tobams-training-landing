@@ -46,7 +46,7 @@ export default function LearningSystem() {
                 <h4 className="text-primary font-bold text-lg">
                   Some of our courses include:
                 </h4>
-                <ul className="flex flex-wrap gap-x-7 ml-5">
+                <ul className="md:flex flex-wrap gap-x-7 ml-5">
                   {courses.map((course) => (
                     <li className="list-disc text-[16px]" key={course}>
                       {course}
