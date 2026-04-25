@@ -10,6 +10,9 @@
   --color-primary: #571244;
   --color-secondary: #EF4353;
   --color-subdue: #696969;
+  --breakpoint-sm: 425px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1280px;
 }
 
 
@@ -20,19 +23,6 @@
   --font-mono: var(--font-geist-mono);
 } */
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}*/
-
-/* @layer components {
-  .container {
-    @apply max-w-7xl mx-auto px-4;
-  }
-} */
-
 
 body {
   font-family: var(--font-nunito);
@@ -41,7 +31,7 @@ body {
 };
 
 .section {
-  @apply max-w-[1312px] mx-auto px-6 lg:px-0;
+  @apply max-w-[1312px] mx-auto px-6;
 };
 
 .headings {

@@ -10,15 +10,17 @@ export default function ManagementDevProgram() {
 
   return (
     <section className="py-16 px-6">
-      <main className="section flex flex-col lg:flex-row items-center bg-primary p-4 lg:p-10 rounded-[20px] text-white gap-5 lg:gap-12">
-        <h2 className="headings lg:hidden text-[16px]">Management Development Program</h2>
+      <main className="section flex flex-col lg:flex-row lg:items-center lg:justify-center bg-primary p-4 lg:p-10 rounded-[20px] text-white gap-5 lg:gap-12">
+        <h2 className="headings lg:hidden text-[16px]">
+          Management Development Program
+        </h2>
 
         <Image
           src="/mgt-dev-program.png"
           alt="image-for-mgt-training"
           width={500}
           height={500}
-          className="w-[592px]"
+          className="w-full lg:w-[592px]"
         />
 
         <div className="flex flex-col gap-4 lg:w-[592px]">
@@ -43,11 +45,10 @@ export default function ManagementDevProgram() {
                 className="flex items-center gap-2 bg-[#8F6182] py-1 px-2 rounded-lg"
               >
                 <Image
-                  src="blazing.svg"
+                  src="white-bolt.svg"
                   alt="blazing"
-                  width={12}
-                  height={16}
-                  className="text-white"
+                  width={18}
+                  height={24}
                 />
                 <p className="font-normal lg:font-semibold">{benefit}</p>
               </li>

@@ -12,10 +12,10 @@ export default function CeoLearning() {
   ];
 
   return (
-    <section className="bg-white py-16">
-      <main className="section flex flex-col gap-5 lg:gap-6 bg-[#EF435333] p-10 rounded-2xl">
-        <div className="flex flex-col gap-2 lg:gap-3 ">
-          <h6 className="text-[#1671D9] italic font-semibold text-sm lg:text-[20px]">
+    <section className="bg-white py-16 px-6 ">
+      <main className="section flex flex-col p-10 lg:px-10 gap-5 lg:gap-6 bg-[#EF435333] rounded-2xl">
+        <div className="flex flex-col gap-2 lg:gap-3 lg:mx-10">
+          <h6 className="text-[#1671D9] italic font-semibold text-sm lg:text-[20px] ">
             Learning With Our CEO:
           </h6>
 
@@ -24,7 +24,7 @@ export default function CeoLearning() {
           </h2>
         </div>
 
-        <p className="">
+        <p className="lg:mx-10">
           Transformation Hub with Jite Newton is a flagship webinar series
           curated by the CEO, Dr. Jite Newton. Designed to elevate career
           trajectories and leadership capabilities, this exclusive event offers
@@ -35,7 +35,7 @@ export default function CeoLearning() {
           drive success in your endeavours.
         </p>
 
-        <div className="flex flex-col lg:flex-row items-center gap-8">
+        <div className="flex flex-col lg:flex-row items-center gap-8 lg:mx-10">
           <Image
             src="/ceo-learning.png"
             alt="CEO Letter"
@@ -44,8 +44,8 @@ export default function CeoLearning() {
             className="h-full"
           />
 
-          <div className="bg-[#FFFFFF4D] rounded-lg py-8 px-5 flex flex-col gap-6 w-full">
-            <div className="grid grid-cols-1 w-full lg:grid-cols-2 gap-x-6 gap-y-3">
+          <div className="bg-[#FFFFFF4D] rounded-lg py-8 px-5 flex flex-col gap-6 w-full lg:w-fit">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3">
               {perks.map((perk) => (
                 <span
                   key={perk}
@@ -57,7 +57,7 @@ export default function CeoLearning() {
                     width={28}
                     height={28}
                   />
-                  <p className="text-lg">{perk}</p>
+                  <p className="text-nowrap">{perk}</p>
                 </span>
               ))}
             </div>

@@ -72,16 +72,41 @@ export default function Footer() {
                 height={100}
               />
 
-              <div>
-                <p className="text-[16px] text-[#F8F8F8]">
-                  Tobams Group is an innovative consultancy firm reshaping the
-                  future of tech talent development in Africa, specializing in
-                  talent acquisition, internships, and skill development with a
-                  global perspective.
-                </p>
+              <p className="text-[16px] text-[#F8F8F8]">
+                Tobams Group is an innovative consultancy firm reshaping the
+                future of tech talent development in Africa, specializing in
+                talent acquisition, internships, and skill development with a
+                global perspective.
+              </p>
 
-                {/* div for social icons */}
-                <div>{/* <Link href="/">Home</Link> */}</div>
+              {/* div for social icons */}
+              <div className="flex gap-5">
+                <Link href="/">
+                  <Image
+                    src={"/linkedin.svg"}
+                    alt="linkedin"
+                    width={40}
+                    height={40}
+                  />
+                </Link>
+
+                <Link href="/">
+                  <Image
+                    src={"/instagram.svg"}
+                    alt="instagram"
+                    width={40}
+                    height={40}
+                  />
+                </Link>
+
+                <Link href={"/"}>
+                  <Image
+                    src={"/twitter-x.svg"}
+                    alt="twitter-x"
+                    width={40}
+                    height={40}
+                  />
+                </Link>
               </div>
             </div>
 
@@ -108,13 +133,13 @@ export default function Footer() {
             </nav>
           </div>
 
-          <div className="flex flex-col-reverse lg:flex-row bg-[#FFFFFF0F] p-4 lg:p-6 rounded-lg gap-6 h-fit">
+          <div className="flex flex-col-reverse lg:flex-row justify-around bg-[#FFFFFF0F] p-4 lg:p-6 rounded-lg gap-6 h-fit">
             <div className="flex flex-col gap-2.5">
               <h3 className="text-lg lg:text-[20px] font-bold">
                 Registered Offices
               </h3>
 
-              <div className="flex flex-col lg:flex-row gap-4 lg:gap-6  text-wrap">
+              <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 text-wrap">
                 <div>
                   <h4 className="font-semibold text-secondary text-sm lg:text-[16px]">
                     United Kingdom
@@ -128,11 +153,11 @@ export default function Footer() {
                 </div>
 
                 <Image
-                  src={"/line.svg"}
-                  alt="line-icon"
+                  src={"/s-line.svg"}
+                  alt="s-line-icon"
                   width={1}
                   height={76}
-                  className="h-full hidden lg:block"
+                  className="h-[76px]] w-auto hidden lg:block"
                 />
 
                 <div>
@@ -156,7 +181,7 @@ export default function Footer() {
               className="h-full hidden lg:block"
             />
 
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 lg:mr-6">
               <h3 className="text-[20px] font-bold">Contact Information</h3>
 
               <div className="text-[16px] flex flex-col gap-2.5">
@@ -176,13 +201,21 @@ export default function Footer() {
           <hr />
 
           {/* footer base containing copyright and policies  */}
-          <div className="flex flex-col-reverse lg:flex-row justify-between gap-3">
-            <p className="font-light">Copyright ⓒ Tobams Group, 2024. All rights reserved.</p>
+          <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-3">
+            <p className="font-light">
+              Copyright ⓒ Tobams Group, 2024. All rights reserved.
+            </p>
 
             <div className="flex justify-around flex-wrap gap-6">
-              <Link href="#" className="underline font-light">Terms and Conditions</Link>
-              <Link href="#" className="underline font-light">Privacy Policy</Link>
-              <Link href="#" className="underline font-light">Cookies Policy</Link>
+              <Link href="#" className="underline font-light">
+                Terms and Conditions
+              </Link>
+              <Link href="#" className="underline font-light">
+                Privacy Policy
+              </Link>
+              <Link href="#" className="underline font-light">
+                Cookies Policy
+              </Link>
             </div>
           </div>
         </main>
